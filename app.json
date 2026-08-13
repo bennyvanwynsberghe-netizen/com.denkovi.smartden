@@ -1,9 +1,11 @@
 {
   "id": "com.denkovi.smartden",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "compatibility": ">=5.0.0",
   "sdk": 3,
-  "platforms": ["local"],
+  "platforms": [
+    "local"
+  ],
   "name": {
     "en": "Denkovi smartDEN",
     "nl": "Denkovi smartDEN"
@@ -33,9 +35,15 @@
         "nl": "smartDEN IP-16R Relais"
       },
       "class": "socket",
-      "capabilities": ["onoff"],
-      "platforms": ["local"],
-      "connectivity": ["lan"],
+      "capabilities": [
+        "onoff"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
       "images": {
         "small": "/drivers/ip16r/assets/images/small.png",
         "large": "/drivers/ip16r/assets/images/large.png",
@@ -64,19 +72,28 @@
         {
           "id": "address",
           "type": "text",
-          "label": { "en": "IP address", "nl": "IP-adres" },
+          "label": {
+            "en": "IP address",
+            "nl": "IP-adres"
+          },
           "value": ""
         },
         {
           "id": "password",
           "type": "password",
-          "label": { "en": "Password", "nl": "Wachtwoord" },
+          "label": {
+            "en": "Password",
+            "nl": "Wachtwoord"
+          },
           "value": "admin"
         },
         {
           "id": "pollInterval",
           "type": "number",
-          "label": { "en": "Poll interval (seconds)", "nl": "Polling-interval (seconden)" },
+          "label": {
+            "en": "Poll interval (seconds)",
+            "nl": "Polling-interval (seconden)"
+          },
           "value": 5,
           "min": 2,
           "max": 3600
@@ -90,9 +107,15 @@
         "nl": "smartDEN IP-32IN Digitale Ingang"
       },
       "class": "sensor",
-      "capabilities": ["alarm_generic"],
-      "platforms": ["local"],
-      "connectivity": ["lan"],
+      "capabilities": [
+        "alarm_generic"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
       "images": {
         "small": "/drivers/ip32in_digital/assets/images/small.png",
         "large": "/drivers/ip32in_digital/assets/images/large.png",
@@ -121,19 +144,28 @@
         {
           "id": "address",
           "type": "text",
-          "label": { "en": "IP address", "nl": "IP-adres" },
+          "label": {
+            "en": "IP address",
+            "nl": "IP-adres"
+          },
           "value": ""
         },
         {
           "id": "password",
           "type": "password",
-          "label": { "en": "Password", "nl": "Wachtwoord" },
+          "label": {
+            "en": "Password",
+            "nl": "Wachtwoord"
+          },
           "value": "admin"
         },
         {
           "id": "pollInterval",
           "type": "number",
-          "label": { "en": "Poll interval (seconds)", "nl": "Polling-interval (seconden)" },
+          "label": {
+            "en": "Poll interval (seconds)",
+            "nl": "Polling-interval (seconden)"
+          },
           "value": 5,
           "min": 2,
           "max": 3600
@@ -147,9 +179,15 @@
         "nl": "smartDEN IP-32IN Analoge Ingang"
       },
       "class": "sensor",
-      "capabilities": ["measure_voltage"],
-      "platforms": ["local"],
-      "connectivity": ["lan"],
+      "capabilities": [
+        "measure_voltage"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
       "images": {
         "small": "/drivers/ip32in_analog/assets/images/small.png",
         "large": "/drivers/ip32in_analog/assets/images/large.png",
@@ -178,19 +216,28 @@
         {
           "id": "address",
           "type": "text",
-          "label": { "en": "IP address", "nl": "IP-adres" },
+          "label": {
+            "en": "IP address",
+            "nl": "IP-adres"
+          },
           "value": ""
         },
         {
           "id": "password",
           "type": "password",
-          "label": { "en": "Password", "nl": "Wachtwoord" },
+          "label": {
+            "en": "Password",
+            "nl": "Wachtwoord"
+          },
           "value": "admin"
         },
         {
           "id": "pollInterval",
           "type": "number",
-          "label": { "en": "Poll interval (seconds)", "nl": "Polling-interval (seconden)" },
+          "label": {
+            "en": "Poll interval (seconds)",
+            "nl": "Polling-interval (seconden)"
+          },
           "value": 5,
           "min": 2,
           "max": 3600
@@ -204,9 +251,15 @@
         "nl": "smartDEN IP-32IN Temperatuur"
       },
       "class": "sensor",
-      "capabilities": ["measure_temperature"],
-      "platforms": ["local"],
-      "connectivity": ["lan"],
+      "capabilities": [
+        "measure_temperature"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
       "images": {
         "small": "/drivers/ip32in_temperature/assets/images/small.png",
         "large": "/drivers/ip32in_temperature/assets/images/large.png",
@@ -235,19 +288,387 @@
         {
           "id": "address",
           "type": "text",
-          "label": { "en": "IP address", "nl": "IP-adres" },
+          "label": {
+            "en": "IP address",
+            "nl": "IP-adres"
+          },
           "value": ""
         },
         {
           "id": "password",
           "type": "password",
-          "label": { "en": "Password", "nl": "Wachtwoord" },
+          "label": {
+            "en": "Password",
+            "nl": "Wachtwoord"
+          },
           "value": "admin"
         },
         {
           "id": "pollInterval",
           "type": "number",
-          "label": { "en": "Poll interval (seconds)", "nl": "Polling-interval (seconden)" },
+          "label": {
+            "en": "Poll interval (seconds)",
+            "nl": "Polling-interval (seconden)"
+          },
+          "value": 5,
+          "min": 2,
+          "max": 3600
+        }
+      ]
+    },
+    {
+      "id": "ipmaxi_relay",
+      "name": {
+        "en": "smartDEN IP-Maxi Relay",
+        "nl": "smartDEN IP-Maxi Relais"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
+      "images": {
+        "small": "/drivers/ipmaxi_relay/assets/images/small.png",
+        "large": "/drivers/ipmaxi_relay/assets/images/large.png"
+      },
+      "pair": [
+        {
+          "id": "board_settings",
+          "navigation": {
+            "next": "list_devices"
+          }
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "settings": [
+        {
+          "id": "address",
+          "type": "text",
+          "label": {
+            "en": "IP address",
+            "nl": "IP-adres"
+          },
+          "value": ""
+        },
+        {
+          "id": "password",
+          "type": "password",
+          "label": {
+            "en": "Password",
+            "nl": "Wachtwoord"
+          },
+          "value": "admin"
+        },
+        {
+          "id": "pollInterval",
+          "type": "number",
+          "label": {
+            "en": "Poll interval (seconds)",
+            "nl": "Polling-interval (seconden)"
+          },
+          "value": 5,
+          "min": 2,
+          "max": 3600
+        }
+      ]
+    },
+    {
+      "id": "ipmaxi_digital",
+      "name": {
+        "en": "smartDEN IP-Maxi Digital Input",
+        "nl": "smartDEN IP-Maxi Digitale Ingang"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "alarm_generic"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
+      "images": {
+        "small": "/drivers/ipmaxi_digital/assets/images/small.png",
+        "large": "/drivers/ipmaxi_digital/assets/images/large.png",
+        "xlarge": "/drivers/ipmaxi_digital/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "board_settings",
+          "navigation": {
+            "next": "list_devices"
+          }
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "settings": [
+        {
+          "id": "address",
+          "type": "text",
+          "label": {
+            "en": "IP address",
+            "nl": "IP-adres"
+          },
+          "value": ""
+        },
+        {
+          "id": "password",
+          "type": "password",
+          "label": {
+            "en": "Password",
+            "nl": "Wachtwoord"
+          },
+          "value": "admin"
+        },
+        {
+          "id": "pollInterval",
+          "type": "number",
+          "label": {
+            "en": "Poll interval (seconds)",
+            "nl": "Polling-interval (seconden)"
+          },
+          "value": 5,
+          "min": 2,
+          "max": 3600
+        }
+      ]
+    },
+    {
+      "id": "ipmaxi_analog",
+      "name": {
+        "en": "smartDEN IP-Maxi Analog Input",
+        "nl": "smartDEN IP-Maxi Analoge Ingang"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "measure_voltage"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
+      "images": {
+        "small": "/drivers/ipmaxi_analog/assets/images/small.png",
+        "large": "/drivers/ipmaxi_analog/assets/images/large.png",
+        "xlarge": "/drivers/ipmaxi_analog/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "board_settings",
+          "navigation": {
+            "next": "list_devices"
+          }
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "settings": [
+        {
+          "id": "address",
+          "type": "text",
+          "label": {
+            "en": "IP address",
+            "nl": "IP-adres"
+          },
+          "value": ""
+        },
+        {
+          "id": "password",
+          "type": "password",
+          "label": {
+            "en": "Password",
+            "nl": "Wachtwoord"
+          },
+          "value": "admin"
+        },
+        {
+          "id": "pollInterval",
+          "type": "number",
+          "label": {
+            "en": "Poll interval (seconds)",
+            "nl": "Polling-interval (seconden)"
+          },
+          "value": 5,
+          "min": 2,
+          "max": 3600
+        }
+      ]
+    },
+    {
+      "id": "ipmaxi_temperature",
+      "name": {
+        "en": "smartDEN IP-Maxi Temperature",
+        "nl": "smartDEN IP-Maxi Temperatuur"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "measure_temperature"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
+      "images": {
+        "small": "/drivers/ipmaxi_temperature/assets/images/small.png",
+        "large": "/drivers/ipmaxi_temperature/assets/images/large.png",
+        "xlarge": "/drivers/ipmaxi_temperature/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "board_settings",
+          "navigation": {
+            "next": "list_devices"
+          }
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "settings": [
+        {
+          "id": "address",
+          "type": "text",
+          "label": {
+            "en": "IP address",
+            "nl": "IP-adres"
+          },
+          "value": ""
+        },
+        {
+          "id": "password",
+          "type": "password",
+          "label": {
+            "en": "Password",
+            "nl": "Wachtwoord"
+          },
+          "value": "admin"
+        },
+        {
+          "id": "pollInterval",
+          "type": "number",
+          "label": {
+            "en": "Poll interval (seconds)",
+            "nl": "Polling-interval (seconden)"
+          },
+          "value": 5,
+          "min": 2,
+          "max": 3600
+        }
+      ]
+    },
+    {
+      "id": "ipmaxi_output",
+      "name": {
+        "en": "smartDEN IP-Maxi Analog Output",
+        "nl": "smartDEN IP-Maxi Analoge Uitgang"
+      },
+      "class": "other",
+      "capabilities": [
+        "dim"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
+      "images": {
+        "small": "/drivers/ipmaxi_output/assets/images/small.png",
+        "large": "/drivers/ipmaxi_output/assets/images/large.png",
+        "xlarge": "/drivers/ipmaxi_output/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "board_settings",
+          "navigation": {
+            "next": "list_devices"
+          }
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "settings": [
+        {
+          "id": "address",
+          "type": "text",
+          "label": {
+            "en": "IP address",
+            "nl": "IP-adres"
+          },
+          "value": ""
+        },
+        {
+          "id": "password",
+          "type": "password",
+          "label": {
+            "en": "Password",
+            "nl": "Wachtwoord"
+          },
+          "value": "admin"
+        },
+        {
+          "id": "pollInterval",
+          "type": "number",
+          "label": {
+            "en": "Poll interval (seconds)",
+            "nl": "Polling-interval (seconden)"
+          },
           "value": 5,
           "min": 2,
           "max": 3600
@@ -259,34 +680,47 @@
     "actions": [
       {
         "id": "relay_toggle",
-        "title": { "en": "Toggle relay", "nl": "Relais omschakelen" },
-        "args": [
-          {
-            "name": "device",
-            "type": "device",
-            "filter": "driver_id=ip16r"
-          }
-        ]
-      },
-      {
-        "id": "relay_pulse",
-        "title": { "en": "Pulse relay", "nl": "Relais pulseren" },
-        "titleFormatted": {
-          "en": "Pulse relay for [[duration]] tenths of a second",
-          "nl": "Pulseer relais voor [[duration]] tiende seconden"
+        "title": {
+          "en": "Toggle relay",
+          "nl": "Relais omschakelen"
         },
         "args": [
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=ip16r"
+            "filter": "capabilities=onoff"
+          }
+        ],
+        "titleFormatted": {
+          "en": "Toggle [[device]]",
+          "nl": "Schakel [[device]] om"
+        }
+      },
+      {
+        "id": "relay_pulse",
+        "title": {
+          "en": "Pulse relay",
+          "nl": "Relais pulseren"
+        },
+        "titleFormatted": {
+          "en": "Pulse [[device]] for [[duration]] tenths of a second",
+          "nl": "Pulseer [[device]] voor [[duration]] tiende seconden"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "capabilities=onoff"
           },
           {
             "name": "duration",
             "type": "number",
             "min": 1,
             "max": 65535,
-            "placeholder": { "en": "10", "nl": "10" }
+            "placeholder": {
+              "en": "10",
+              "nl": "10"
+            }
           }
         ]
       }
@@ -294,25 +728,39 @@
     "triggers": [
       {
         "id": "input_turned_on",
-        "title": { "en": "Input turned on", "nl": "Ingang ging aan" },
+        "title": {
+          "en": "Input turned on",
+          "nl": "Ingang ging aan"
+        },
         "args": [
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=ip32in_digital"
+            "filter": "capabilities=alarm_generic"
           }
-        ]
+        ],
+        "titleFormatted": {
+          "en": "[[device]] turned on",
+          "nl": "[[device]] ging aan"
+        }
       },
       {
         "id": "input_turned_off",
-        "title": { "en": "Input turned off", "nl": "Ingang ging uit" },
+        "title": {
+          "en": "Input turned off",
+          "nl": "Ingang ging uit"
+        },
         "args": [
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=ip32in_digital"
+            "filter": "capabilities=alarm_generic"
           }
-        ]
+        ],
+        "titleFormatted": {
+          "en": "[[device]] turned off",
+          "nl": "[[device]] ging uit"
+        }
       }
     ]
   }

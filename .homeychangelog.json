@@ -1,0 +1,5 @@
+{
+  "2.0.0": {
+    "en": "Added support for the smartDEN IP-Maxi: relays, digital inputs, analog inputs, temperature inputs and analog outputs."
+  }
+}
