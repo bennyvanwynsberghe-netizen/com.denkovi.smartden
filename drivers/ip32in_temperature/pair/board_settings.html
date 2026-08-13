@@ -1,0 +1,56 @@
+<style>
+  .denkovi-form { padding: 16px; }
+  .denkovi-form label { display: block; margin-top: 12px; font-weight: 600; }
+  .denkovi-form input { width: 100%; box-sizing: border-box; padding: 8px; margin-top: 4px; }
+  .denkovi-form .hint { font-size: 12px; color: #888; margin-top: 4px; }
+  .denkovi-form button { margin-top: 20px; }
+</style>
+
+<div class="denkovi-form">
+  <p>Fill in the connection details of your smartDEN IP-32IN module. This will add one device per temperature probe.</p>
+
+  <label for="name">Board name</label>
+  <input type="text" id="name" placeholder="e.g. Pool room" />
+
+  <label for="address">IP address</label>
+  <input type="text" id="address" placeholder="192.168.1.101" />
+
+  <label for="password">Password</label>
+  <input type="password" id="password" value="admin" />
+  <div class="hint">
+    Default is "admin". Make sure "Encrypt Password" is disabled and access mode
+    is set to "Multiple Access" in the device's HTTP/XML/JSON settings.
+  </div>
+
+  <label for="pollInterval">Poll interval (seconds)</label>
+  <input type="number" id="pollInterval" value="5" min="2" max="3600" />
+
+  <button class="homey-button-primary-full" id="connectButton">Connect</button>
+</div>
+
+<script>
+  Homey.setTitle('smartDEN IP-32IN Temperature');
+
+  document.getElementById('connectButton').addEventListener('click', async () => {
+    const button = document.getElementById('connectButton');
+    button.disabled = true;
+    button.textContent = 'Connecting...';
+
+    const data = {
+      name: document.getElementById('name').value,
+      address: document.getElementById('address').value,
+      password: document.getElementById('password').value,
+      pollInterval: document.getElementById('pollInterval').value,
+    };
+
+    try {
+      await Homey.emit('board_settings', data);
+      await Homey.nextView();
+    } catch (err) {
+      await Homey.alert((err && err.message) || String(err));
+    } finally {
+      button.disabled = false;
+      button.textContent = 'Connect';
+    }
+  });
+</script>

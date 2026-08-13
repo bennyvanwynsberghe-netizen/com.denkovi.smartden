@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Homey CLI build output
+.homeybuild/
+*.tar.gz
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+*.log
+
+# Environment / secrets
+.env
+env.json
+
+# Editor & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

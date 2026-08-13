@@ -1,0 +1,5 @@
+Some of the most useful things in a home are hidden in the technical room: the pool pump, the irrigation valves, the garage door contact, the boiler temperature. Denkovi smartDEN modules are the rugged Ethernet relay boards and input modules that professionals use to switch and measure exactly those things. This app brings them into Homey, where they belong.
+
+Every relay becomes a switch you can flip from your phone or a Flow. Every digital input becomes a contact you can trigger on, every analog input a live sensor reading, and every probe a temperature you can watch and act upon. Give a channel a name once on the module itself and it arrives in Homey exactly as you labelled it, so a relay called "pool pump" is simply the pool pump, ready to combine with the lights, sensors and schedules you already have.
+
+Whether you are automating a workshop, keeping an eye on a machine room, or finally connecting that one stubborn piece of hardware to the rest of your smart home, this is the bridge between industrial reliability and everyday convenience.

@@ -1,0 +1,5 @@
+Sommige van de nuttigste dingen in huis zitten verstopt in de technische ruimte: de zwembadpomp, de beregeningskleppen, het contact van de garagepoort, de temperatuur van de ketel. Denkovi smartDEN-modules zijn de robuuste Ethernet-relaisborden en inputmodules waarmee professionals precies die zaken schakelen en meten. Deze app brengt ze binnen in Homey, waar ze thuishoren.
+
+Elk relais wordt een schakelaar die je bedient vanaf je telefoon of vanuit een Flow. Elke digitale ingang wordt een contact om op te triggeren, elke analoge ingang een live sensorwaarde, en elke voeler een temperatuur die je kunt opvolgen en gebruiken. Geef een kanaal eenmalig een naam op de module zelf en het verschijnt in Homey precies zoals je het hebt gelabeld, zodat een relais met de naam "zwembadpomp" gewoon de zwembadpomp is, klaar om te combineren met de lampen, sensoren en schema's die je al hebt.
+
+Of je nu een werkplaats automatiseert, een machinekamer in het oog houdt, of eindelijk dat ene koppige stuk hardware verbindt met de rest van je smart home: dit is de brug tussen industriële betrouwbaarheid en dagelijks gemak.

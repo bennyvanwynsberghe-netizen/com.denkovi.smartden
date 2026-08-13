@@ -1,0 +1,319 @@
+{
+  "id": "com.denkovi.smartden",
+  "version": "1.0.0",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "platforms": ["local"],
+  "name": {
+    "en": "Denkovi smartDEN",
+    "nl": "Denkovi smartDEN"
+  },
+  "description": {
+    "en": "Every relay, switch and sensor, right inside your smart home",
+    "nl": "Elk relais, elke schakelaar en sensor, voortaan deel van je smart home"
+  },
+  "category": "appliances",
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Benny",
+    "email": "benny.van.wynsberghe@gmail.com"
+  },
+  "support": "mailto:benny.van.wynsberghe@gmail.com",
+  "brandColor": "#1E88E5",
+  "drivers": [
+    {
+      "id": "ip16r",
+      "name": {
+        "en": "smartDEN IP-16R Relay",
+        "nl": "smartDEN IP-16R Relais"
+      },
+      "class": "socket",
+      "capabilities": ["onoff"],
+      "platforms": ["local"],
+      "connectivity": ["lan"],
+      "images": {
+        "small": "/drivers/ip16r/assets/images/small.png",
+        "large": "/drivers/ip16r/assets/images/large.png",
+        "xlarge": "/drivers/ip16r/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "board_settings",
+          "navigation": {
+            "next": "list_devices"
+          }
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "settings": [
+        {
+          "id": "address",
+          "type": "text",
+          "label": { "en": "IP address", "nl": "IP-adres" },
+          "value": ""
+        },
+        {
+          "id": "password",
+          "type": "password",
+          "label": { "en": "Password", "nl": "Wachtwoord" },
+          "value": "admin"
+        },
+        {
+          "id": "pollInterval",
+          "type": "number",
+          "label": { "en": "Poll interval (seconds)", "nl": "Polling-interval (seconden)" },
+          "value": 5,
+          "min": 2,
+          "max": 3600
+        }
+      ]
+    },
+    {
+      "id": "ip32in_digital",
+      "name": {
+        "en": "smartDEN IP-32IN Digital Input",
+        "nl": "smartDEN IP-32IN Digitale Ingang"
+      },
+      "class": "sensor",
+      "capabilities": ["alarm_generic"],
+      "platforms": ["local"],
+      "connectivity": ["lan"],
+      "images": {
+        "small": "/drivers/ip32in_digital/assets/images/small.png",
+        "large": "/drivers/ip32in_digital/assets/images/large.png",
+        "xlarge": "/drivers/ip32in_digital/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "board_settings",
+          "navigation": {
+            "next": "list_devices"
+          }
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "settings": [
+        {
+          "id": "address",
+          "type": "text",
+          "label": { "en": "IP address", "nl": "IP-adres" },
+          "value": ""
+        },
+        {
+          "id": "password",
+          "type": "password",
+          "label": { "en": "Password", "nl": "Wachtwoord" },
+          "value": "admin"
+        },
+        {
+          "id": "pollInterval",
+          "type": "number",
+          "label": { "en": "Poll interval (seconds)", "nl": "Polling-interval (seconden)" },
+          "value": 5,
+          "min": 2,
+          "max": 3600
+        }
+      ]
+    },
+    {
+      "id": "ip32in_analog",
+      "name": {
+        "en": "smartDEN IP-32IN Analog Input",
+        "nl": "smartDEN IP-32IN Analoge Ingang"
+      },
+      "class": "sensor",
+      "capabilities": ["measure_voltage"],
+      "platforms": ["local"],
+      "connectivity": ["lan"],
+      "images": {
+        "small": "/drivers/ip32in_analog/assets/images/small.png",
+        "large": "/drivers/ip32in_analog/assets/images/large.png",
+        "xlarge": "/drivers/ip32in_analog/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "board_settings",
+          "navigation": {
+            "next": "list_devices"
+          }
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "settings": [
+        {
+          "id": "address",
+          "type": "text",
+          "label": { "en": "IP address", "nl": "IP-adres" },
+          "value": ""
+        },
+        {
+          "id": "password",
+          "type": "password",
+          "label": { "en": "Password", "nl": "Wachtwoord" },
+          "value": "admin"
+        },
+        {
+          "id": "pollInterval",
+          "type": "number",
+          "label": { "en": "Poll interval (seconds)", "nl": "Polling-interval (seconden)" },
+          "value": 5,
+          "min": 2,
+          "max": 3600
+        }
+      ]
+    },
+    {
+      "id": "ip32in_temperature",
+      "name": {
+        "en": "smartDEN IP-32IN Temperature",
+        "nl": "smartDEN IP-32IN Temperatuur"
+      },
+      "class": "sensor",
+      "capabilities": ["measure_temperature"],
+      "platforms": ["local"],
+      "connectivity": ["lan"],
+      "images": {
+        "small": "/drivers/ip32in_temperature/assets/images/small.png",
+        "large": "/drivers/ip32in_temperature/assets/images/large.png",
+        "xlarge": "/drivers/ip32in_temperature/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "board_settings",
+          "navigation": {
+            "next": "list_devices"
+          }
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "settings": [
+        {
+          "id": "address",
+          "type": "text",
+          "label": { "en": "IP address", "nl": "IP-adres" },
+          "value": ""
+        },
+        {
+          "id": "password",
+          "type": "password",
+          "label": { "en": "Password", "nl": "Wachtwoord" },
+          "value": "admin"
+        },
+        {
+          "id": "pollInterval",
+          "type": "number",
+          "label": { "en": "Poll interval (seconds)", "nl": "Polling-interval (seconden)" },
+          "value": 5,
+          "min": 2,
+          "max": 3600
+        }
+      ]
+    }
+  ],
+  "flow": {
+    "actions": [
+      {
+        "id": "relay_toggle",
+        "title": { "en": "Toggle relay", "nl": "Relais omschakelen" },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=ip16r"
+          }
+        ]
+      },
+      {
+        "id": "relay_pulse",
+        "title": { "en": "Pulse relay", "nl": "Relais pulseren" },
+        "titleFormatted": {
+          "en": "Pulse relay for [[duration]] tenths of a second",
+          "nl": "Pulseer relais voor [[duration]] tiende seconden"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=ip16r"
+          },
+          {
+            "name": "duration",
+            "type": "number",
+            "min": 1,
+            "max": 65535,
+            "placeholder": { "en": "10", "nl": "10" }
+          }
+        ]
+      }
+    ],
+    "triggers": [
+      {
+        "id": "input_turned_on",
+        "title": { "en": "Input turned on", "nl": "Ingang ging aan" },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=ip32in_digital"
+          }
+        ]
+      },
+      {
+        "id": "input_turned_off",
+        "title": { "en": "Input turned off", "nl": "Ingang ging uit" },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=ip32in_digital"
+          }
+        ]
+      }
+    ]
+  }
+}
